@@ -51,19 +51,22 @@ table {
 body {
   font-size: ;
   font-family: ;
+  height: 100vh
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: ;
+  background-color: gray;
 }
 
 h1 {
+  @import url('https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap');
   font-size: 3rem;
-  font-family: ;
-  color: blue;
+  font-family: 'Kufam', cursive;
+  color: maroon;
+  margin-left: 5%;
 }
 
 a {
@@ -71,46 +74,92 @@ a {
 }
 
 nav {
-
+  margin-right: 2.5%;
+  justify-content:space-evenly;
+  align-content: center;
+  height: 20px;
 }
 
-nav a {
-
+.homeButton {
+  color: white;
+  background-color: maroon;
+  transition: .3s;
 }
 
-nav a:hover {
+.homeButton:hover {
+  color: maroon;
+  background-color: white;
+}
 
+.aboutButton {
+  color: maroon;
+  background-color: white;
+  transition: .3s;
+}
+
+.aboutButton:hover {
+  color: white;
+  background-color: maroon;
+}
+
+.contactButton {
+  color: maroon;
+  background-color: white;
+  transition: .3s;
+}
+
+.contactButton:hover {
+  color: white;
+  background-color: maroon;
+}
+
+.projectsButton {
+  color: maroon;
+  background-color: white;
+  transition: .3s;
+}
+
+.projectsButton:hover {
+  color: white;
+  background-color: maroon;
 }
 
 .sectionFam {
-
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 300px;
 }
 
 .div1 {
-  background-image: ;
+  background-image: url(https://picsum.photos/150);
 }
 
 .divName {
-
+  font-family: 'Kufam', cursive;
+  color: maroon;
 }
 
 .divButton {
 
 }
 
+
 .sectionProjects {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-content: space-evenly;/*come back to this*/
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
     height: 80vh;
 }
 
 .image {
   background: url(https://picsum.photos/150);
   height: 150px;
-  width: 200px;
+  width: 150px;
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
